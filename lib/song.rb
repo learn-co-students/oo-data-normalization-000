@@ -26,8 +26,3 @@ attr_reader :title, :artist
 
 
 end
-
-song = Song.new
-song.title = "Night Moves"
-song.artist = Artist.new("Bob Seger")
-song.serialize
