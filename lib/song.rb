@@ -10,7 +10,7 @@ class Song
 
   def serialize
     song = title.sub(/\s/, "_")
-    t=Tempfile.new("#{song.downcase}", ".txt",)
+    t=Tempfile.new("#{song.downcase}",)
     t << "#{artist.name} - #{title}"
     t.close
   end
